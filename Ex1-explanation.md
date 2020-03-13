@@ -24,4 +24,4 @@ Latest addition to JavaScript family:
 7. **Symbol**
 8. **BigInt**
 
-[Learn More](https://www.notion.so/Value-Types-1f813c53484e442f89c25b7391bcdce3)
+[Learn More](https://www.notion.so/Value-Variables-and-Types-58afadf3f81b4ef0ad30af773d5d1160)
