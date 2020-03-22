@@ -24,4 +24,98 @@ Latest addition to JavaScript family:
 7. **Symbol**
 8. **BigInt**
 
-[Learn More](https://www.notion.so/Value-Variables-and-Types-58afadf3f81b4ef0ad30af773d5d1160)
+### Number
+
+All numeric values are of `number` data type in JavaScript. Example of number type would be
+
+```js
+133,
+  1,
+  456 - 123, // Integers
+  -324; // Negative Numbers
+132.43, -12.23; // Decimal point number
+Infinity, NaN, -Infinity; // Special numbers like
+```
+
+**JavaScript uses a fixer number of bits i.e `64` to store a single number.**
+
+Special numbers are values that are of number data type but doesn't exactly behaves like numbers in some cases.
+
+```js
+Infinity - 1; // Infinity
+```
+
+Numbers can manipulated using arithmetic operations like addition, multiplication etc. To do that we use arithmetic operators (`+`, `-`, `*`).
+
+```js
+24 + 21; // 45
+45 - 20; // 25
+30 * 20; // 600
+20 + 10 * 11; // 130
+```
+
+Symbols like (`+`, `-`, `*`) used above are called Operators. Putting the operator between two values will return a new value. Like in above example using `+` on 24 and 21 return 45.
+
+---
+
+### BigInt
+
+Used to represent the number bigger than 9007199254740991 or smaller than -9007199254740991. For BigInt you need to add `n` at the end of the value.
+
+```js
+const bigInt = 1234567890123456789012345678901234567890n;
+```
+
+---
+
+### String
+
+Any representation of text is `string` data type in JavaScript.
+
+Example:
+
+```js
+"a"; // letter
+"A"; // uppercase letter
+"Hello"; // word
+"Hello World!"; // single quote
+"JavaScript is a single threaded language!"; // paragraph
+```
+
+**Visual Impression to identify string:** Anything wrapped in `''` , `""` or `backticks` is a string.
+
+---
+
+### Boolean
+
+To differentiate between only two possible values like `day` or `night` , `yes` or `no` , `on` or `off` we use boolean data type in JavaScript that has only two fixed values `true` or `false`.
+
+- `true` can represent values like `on` or `yes`
+
+- `false` represents values like `off` or `no`
+
+---
+
+### Void Values (Empty)
+
+To represent the existence of no meaningful values we use special values i.e `null` or `undefined`. These are values that carry no informations. It is used for the places where the operation doesn't produce meaningful value.
+
+`undefined` is the only value of type undefined `null` is the only value of type null
+
+There is no fundamental difference between `null` or `undefined`. In most of the case you can treat the as interchangeable.
+
+---
+
+## `typeof`
+
+To check the data type of any value we use `typeof` operator. It always return `string` data types.
+
+```js
+typeof 21; // "number"
+typeof "Hello"; // "string"
+typeof true; // "boolean"
+typeof undefined; // "undefined"
+typeof null; // "object" 🔥Boop
+```
+
+`typeof null` returns `"object"` is a bug in JavaScript. It can't be fixed ever because there are lots of website depends on this error.
