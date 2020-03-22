@@ -91,3 +91,95 @@ Output of each line of code :
 - 3 \* false
 - 3 \* ""
 - 3 + ""
+
+## Operators-writeCode
+
+Output of the following line of code.
+
+```js
+"NaN" && "undefined" && 0; // output
+"AT" && "" && false; // output
+"AT" && " " && false; // output
+"AT" || 5; // output
+" " || "AT" || false; // output
+!{}; //output
+!""; //output
+!"OK"; //output
+!false; //output
+!true; //output
+```
+
+## == and === writeTextAnswer
+
+What is the difference between double equal and tripal equal comparision operator. Explain with example.
+
+## Double and Tripal equal-writeCode
+
+```js
+var a = 5,
+  b = 10,
+  c = "5";
+var x = a;
+```
+
+What will be the output of the code below on the basis of above code.
+
+```js
+a == c; // output
+a === c; // output
+a == x; // output
+a != b; // output
+a > b; // output
+a < b; // output
+a >= b; // output
+a <= b; // output
+a >= c; // output
+a <= c; // output
+```
+
+```js
+var a = 5,
+  b = 10;
+```
+
+What will be the output of the code below on the basis of above code.
+
+```js
+a != b && a < b; //output
+a > b || a == b; //output
+a < b || a == b; //output
+!(a < b); //output
+!(a > b); //output
+```
+
+## writeTextAnswer
+
+What is the difference between `if` statement and ternary operator. Explain with example.
+
+## writeCode
+
+Take two value using prompt and store them in variables `num1` and `num2`. Check whether they are equal or not.
+
+- if the input value is anything like `true`, `null` or `undefined` alert saying `Enter a valid value`.
+
+Example:
+
+```js
+21, 21; // true
+21, "21"; // true
+"21", "21"; // true
+"hello", -21; // false
+```
+
+## writeCode
+
+Given a positive integer `n`. Print one word in format of heeeello(letter 'e' must be repeated `n` times). Take input from prompt and print the result in alert.
+
+Example:
+
+```
+for n = 1
+result should be hello.
+for n = 7,
+result should be heeeeeeello (e repeated 7 times).
+```

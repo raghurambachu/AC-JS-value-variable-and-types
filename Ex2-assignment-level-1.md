@@ -157,4 +157,85 @@ Output of the following code
 9. `Boolean(" ")`
 10. `Boolean("")`
 
+## Operators-writeCode
+
+Output of the following line of code.
+
+```js
+20 > 5 && 5 < 20; //output
+20 > 5 && 20 < 5; //output
+NaN && NaN; //output
+NaN && undefined; //output
+undefined && " "; //output
+"" && "Arya"; //output
+"Arya" && 5; //output
+10 && "Arya"; //output
+" " && 10; //output
+NaN && undefined; //output
+" " || 10; //output
+undefined || " "; //output
+10 || "Arya"; //output
+"" || "Arya"; //output
+!undefined; //output
+!null; //output
+!20; //output
+!0; //output
+!NaN; //output
+```
+
+## writeQuiz
+
+What is the value of x?
+
+```js
+var a = 5,
+  b = 10,
+  c = "5";
+var x = a + "5";
+```
+
+- [ ] 5
+- [ ] 10
+- [ ] 15
+- [ ] 55
+
+## Condition-writeCode
+
+Write a program that asks the user his/her age and check for the following conditions :
+
+- `if` the age is between 12-55 then print the message "You can participate in the marathon".
+- `if` the age is between 4-11 then print the message " You are too young to participate in the marathon".
+- `if` the age is less than 4 then print the message " Hey Kiddo! Can You Walk ?"
+- `if` the age is greater than 55 then print the message " You are too old to participate in the marthon".
+
 ## writeCode
+
+Write a program that asks the user for the house name and check the following conditions :
+
+- `if` house name is "stark" then print the message " Winter is coming"
+- `if` house name is "lannister" then print the message " A lannister always pays his debt"
+- `else` print the message " All men must die"
+
+## writeCode
+
+Write a program that asks the user for a number and check the following conditions :
+
+- `if` the number is even print the message " number is even"
+- `if` the number is odd print the message "number is odd"
+
+### Convert the above code using `?` terniary operator
+
+## writeCode
+
+1. Print the odd numbers from 9 through 1(both inclusive) using a for loop. There is no input involved.
+2. Add numbers from 5 through 0(both inclusive) in descending order using a while loop. There is no input involved.
+3. Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n(using prompt modal window) then based on input provided calculate and show result in alert modal window.
+4. Write a program to print from 1 to 10 but quit if multiple of 7 is encountered. There is no input involved.
+
+## writeCode
+
+Complete the following code to make the output be 0 2 4 6 8 10?
+
+```js
+for (let j = 0; j <= 10; ____) console.log(j);
+```
