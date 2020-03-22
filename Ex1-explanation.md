@@ -10,7 +10,7 @@ For example
 
 You can have different kind of values a letter, word, paragraph, number etc. These values are divided into different types also know `Data Types` or you can call it value types. All the value has to be one of the following types.
 
-## Data Types-readText
+### Data Types
 
 1. Number (`21`, `21.45` )
 2. String (`"a"`, `"hello"`, `"A quick brown fox jumped over lazy dog!"`)
@@ -24,7 +24,7 @@ Latest addition to JavaScript family:
 7. **Symbol**
 8. **BigInt**
 
-### Number
+#### Number
 
 All numeric values are of `number` data type in JavaScript. Example of number type would be
 
@@ -58,7 +58,7 @@ Symbols like (`+`, `-`, `*`) used above are called Operators. Putting the operat
 
 ---
 
-### BigInt
+#### BigInt
 
 Used to represent the number bigger than 9007199254740991 or smaller than -9007199254740991. For BigInt you need to add `n` at the end of the value.
 
@@ -68,7 +68,7 @@ const bigInt = 1234567890123456789012345678901234567890n;
 
 ---
 
-### String
+#### String
 
 Any representation of text is `string` data type in JavaScript.
 
@@ -86,7 +86,7 @@ Example:
 
 ---
 
-### Boolean
+#### Boolean
 
 To differentiate between only two possible values like `day` or `night` , `yes` or `no` , `on` or `off` we use boolean data type in JavaScript that has only two fixed values `true` or `false`.
 
@@ -96,7 +96,7 @@ To differentiate between only two possible values like `day` or `night` , `yes` 
 
 ---
 
-### Void Values (Empty)
+#### Void Values (Empty)
 
 To represent the existence of no meaningful values we use special values i.e `null` or `undefined`. These are values that carry no informations. It is used for the places where the operation doesn't produce meaningful value.
 
@@ -106,7 +106,7 @@ There is no fundamental difference between `null` or `undefined`. In most of the
 
 ---
 
-## `typeof`
+### `typeof`
 
 To check the data type of any value we use `typeof` operator. It always return `string` data types.
 
@@ -119,3 +119,173 @@ typeof null; // "object" 🔥Boop
 ```
 
 `typeof null` returns `"object"` is a bug in JavaScript. It can't be fixed ever because there are lots of website depends on this error.
+
+## Variable (Storing a value)-readText
+
+In the above module we learned about value (information) and different value types like `number` , `string` , `boolean` etc.
+
+Variable is a named storage that is used to store any value. You can imagine a variable to be like a box with name that is used to store number, boolean, string, null, undefined, object, BigInt and Symbol.
+
+Example:
+
+```js
+var username = "Arya";
+```
+
+In the above code we are using multiple things let's understand all of those.
+
+- `var` Keyword to create a new box.
+
+- `username` To name a box.
+
+- `=` assignment operator assign a value `"Arya"` to the box named `username`
+
+![Store of value](./assets/variable-box.png)
+
+![variable](assets/variable-var.png)
+
+**On the right hand side of `=` can only be a value.**
+
+You can also change the value of a variable using `=` (assignment operator) like below
+
+```js
+var username = "Arya";
+username = "John";
+```
+
+The value of the `"Arya"` will be replaced with `"John"` this is called re-assignment.
+
+![Re-assignment](assets/re-assignment.png)
+
+variable can only hold one value at a time.
+
+There are multiple ways of creating a box in JavaScript i.e `var` , `let`, `const`
+
+```js
+var username = "Arya";
+let house = "Stark";
+const brother = "John";
+```
+
+You can create boxes using multiple ways but all the boxes behaves differently.
+
+### `var`
+
+### `let`
+
+### `const`
+
+Box created with const keyword can't be re-assigned to another value.
+
+## Predefined Utilities-readText
+
+### `alert`, `prompt`, `confirm`, `console`
+
+There are few predefined functions present in browser to help us interact with user and also to help us with debugging. These functions can be executed with `()` after the function name in browser using developer tool `console`
+
+#### `alert`
+
+It accepts a message in string data type. This will open a dialog box in the browser with `ok` button.
+
+The job of the alert function is to display a dialog box with any message you pass in the browser.
+
+```js
+alert("Hello World!");
+```
+
+#### `prompt`
+
+It accepts a string data type and display with an input box where user can enter value in the browser. `prompt` returns the data entered by user in the string data type.
+
+```js
+propmt("What is your age?"); // "21"
+```
+
+#### `confirm`
+
+It shows a modal window in the browser with two buttons i.e `ok` and `cancel` . It returns `true` if your click `ok` or `false` if you click `cancel`
+
+```js
+confirm("Do you want to close is?"); // true
+```
+
+## Type Conversion - readText
+
+It is a mechanism of converting one data type to another data type.
+
+Example:
+
+```js
+"21" + 23; // "2123"
+```
+
+![Type COnversion](assets/type-conversion.png)
+
+There are two type of type conversion that happens
+
+1. Implicit
+2. Explicit
+
+### Implicit
+
+Implicit type conversion refers to JavaScript engine's attempt to convert unexpected value type to expected value type like in above example the value `32` got converted into `"32"` to complete the operation. The system does this kind of conversion.
+
+    true + true; // 2 (boolean to number)
+    1 + "2" + 21; // "1221" (number to string)
+    1 + true; // 2 (boolean to number)
+    3 * "3"; // 9 (string to number)
+
+### Explicit
+
+Explicit type conversion is we as developer convert unexpected data type into expected data type.
+
+You can use these functions to convert to respective types i.e `Number()`, `String()`, `Boolean()` etc.
+
+```js
+Number(true); // 1 (boolean to number)
+Number("1"); // 1 (string to number)
+Number(null); // 0 (null to number)
+Number(undefined); // 0 (undefined to number)
+String(21); // "21" (number to string)
+String(true); // "true" (boolean to string)
+```
+
+You can also convert a non number data type into number using _unary_ `+` operator like `+"21"` will return 21.
+
+### Truthy and Falsy Values
+
+All the values in JavaScript can be categorised into one of two kinds of values either `truthy` or `falsy` values.
+
+When you convert a value into boolean and you get `true` as result that value is said to a truthy value.
+
+```js
+Boolean(36); // true (36 is a truthy value)
+Boolean("Hello"); // true ("Hello" is a truthy value)
+Boolean({}); // true ({} is a truthy value)
+```
+
+Similarly when converting a value into boolean returns `false` as result that value is considered to be falsy value. There are only six values that are falsy.
+
+1. `false`
+2. `0`
+3. `""` (empty string)
+4. `null`
+5. `undefined`
+6. `NaN`
+7. `-0`
+
+**Everything else is truthy.**
+
+```js
+Boolean(null); // flasy value
+Boolean(undefined); // flasy value
+Boolean(0); // flasy value
+Boolean(false); // flasy value
+Boolean(""); // flasy value
+Boolean(NaN); // flasy value
+Boolean(false); // flasy value
+```
+
+**All the values other than six falsy values are truthy values.**
+
+**NOTE**: `true` is a value truthy is a kind of value. `36`, `"Hello"` are truthy values.
