@@ -106,6 +106,19 @@ There is no fundamental difference between `null` or `undefined`. In most of the
 
 ---
 
+#### Object
+
+Object is a collection of `key` and `value` pair seperated by comma `,`. Where key a `string` and `value` can any data types like number, boolean, string, null, undefined, symbol or object.
+
+```js
+var user = {
+  name: "Arya",
+  age: 21,
+  house: "Stark",
+  isAdult: true
+};
+```
+
 ### `typeof`
 
 To check the data type of any value we use `typeof` operator. It always return `string` data types.
@@ -119,3 +132,29 @@ typeof null; // "object" 🔥Boop
 ```
 
 `typeof null` returns `"object"` is a bug in JavaScript. It can't be fixed ever because there are lots of website depends on this error.
+
+## Category of value types-readText
+
+All the data types explained above can be categorised in two different types.
+
+#### 1. Primitive Data Type:
+
+Primitive data type are basic type provided by programming language as a building block of values like number, text etc. **Primitive Data Types are immutable (can't be changed) in nature.**
+
+- Primitive Data Types
+  - number
+  - string
+  - boolean
+  - null
+  - undefined
+  - null
+  - symbol
+  - BigInt
+
+#### 2. Object (Non-Primitive) Data Type:
+
+For storing some complicated data, programmig languages provide some ways to handle it, starting from primitive type. They have built-in support (adding, removeing, changing) for these kind of data types. Everything that is not primitive is an object in JavaScript. example: function, array etc.
+
+**Non-Primitive Data Types are mutable (can be changed).**
+
+- Object Type (Non-primitive Data Type)
