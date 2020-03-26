@@ -183,3 +183,14 @@ result should be hello.
 for n = 7,
 result should be heeeeeeello (e repeated 7 times).
 ```
+
+## writeTextAnswer
+
+```js
+true == 0; // output
+true == 1; // output
+true == 2; // output
+true == 3; // output
+true == 100; // output
+true == 1000; // output
+```
