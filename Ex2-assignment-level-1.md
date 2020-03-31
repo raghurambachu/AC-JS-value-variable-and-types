@@ -1,6 +1,6 @@
 ## writeCode
 
-Define 5 values of different types number and string and store it in a variable.
+Define 5 values of types number and string and store it in a variable.
 
 ## writeCode
 
@@ -11,7 +11,7 @@ Define 5 values of different types number and string and store it in a variable.
 
 ## writeCode
 
-User `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum` using `+` operator add numA and numB and using alert display in browser.
+Use `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum`, using `+` operator add numA and numB , store it in varible `sum` and using alert display `sum` in browser.
 
 ## writeCode
 

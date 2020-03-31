@@ -8,6 +8,20 @@ To do this, we use the `if` statement or conditional operator `?` also known as 
 
 ## `if` statement
 
+```
+ if (condition) {
+  statement 1
+} else {
+  statement 2
+}
+
+statement 3
+```
+
+- `if` statement evaluates a condition in the parentheses and
+- if it results to `true` statement 1 is executed, then statement 3 is excuted (statement 2 doesnt excutes)
+- if it results to `false` statement 1 is not executed rather statement 2 inside of else is evaluated, then statement 3 is executed
+
 Example:
 
 ```js
@@ -81,6 +95,52 @@ The above code works but the idea of programming is to make things _easy_ not _h
 
 Looping allows us to execute a block of code and go back to see if it meets the condition run the code again or not. If yes it will run the code again.
 
+There are three type of loop
+
+1. `while`
+2. `do while`
+3. `for`
+
+- `while` loop
+
+- Syntax
+
+```
+while (condition) {
+  // code block to be executed
+}
+```
+
+- Example
+
+```js
+let i = 1;
+while (i < 10) {
+  console.log(i);
+  i = i + 1;
+}
+```
+
+2. `do while` loop
+
+- Syntax
+
+do { // code block to be executed } while (condition);
+
+exapmle - do { consoel.log(i) i = i+1; } while (i < 10);
+
+3. for loop
+
+Syntax
+
+for (statement 1; statement 2; statement 3) { // code block to be executed } statement 1 :- the initial value where loop starts it is excuted only once at the begening of the loop statement 2 :- condition statement 3 :- is executed (every time) after the code block has been executed.
+
+example for (i = 0; i < 5; i= i+1) { console.log(i); }
+
+pointer :- 1)for and while loop are entry checking means if condition is wrong at the begening of loop it wont run But do while is exit checking means that it will at least run one time even if condition is wrong at the begening.
+
+2. One of the common mistake made writing loop is we forget to increment the counter, so it becomes an infinite loop.(In all the above loop example you can see that variable on which condition is checked is updated inside that loop ) -->
+
 ```js
 while (condition) {
   // "loop body"
@@ -95,7 +155,7 @@ while (num <= 10) {
 
 The above code can be simplified like this using loops.
 
-A statement starting with `while` o*r `for`* creates a loop. For `while` statement, after the keyword it accepts a expression in parentheses followed by a block of code. Every-time the expression in parentheses results to `true` the block of code will be executed.
+A statement starting with `while` or `for`\* creates a loop. For `while` statement, after the keyword it accepts a expression in parentheses followed by a block of code. Every time the expression in parentheses results to `true` the block of code will be executed.
 
 ## `for` loop
 
