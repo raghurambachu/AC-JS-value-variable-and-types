@@ -1,6 +1,6 @@
 ## Operators-readText
 
-In JavaScript Operator a are used for operation like assignment, comparing, arithmetic, logical etc. JavaScript supports bot _unary_ and _binary_ operators.
+In JavaScript Operator a are used for operation like assignment, comparing, arithmetic, logical etc. JavaScript supports both _unary_ and _binary_ operators.
 
 **Unary** operators act on one operand where ad **Binary** acts on two operand(value).
 
@@ -43,6 +43,7 @@ When applied on two operand it does one of the following:
 ```
 
 Above in the example `"21" + 23` first operand is `"21"` (string data type) and another operand is a number (`23`). So the second rule applies here if any of the operand is a string than both the operands are concatenated converting the number (`23`) into sting with implicit type conversion.
+
 
 ### `=` Assignment Operator
 
