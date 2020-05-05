@@ -38,6 +38,7 @@ Infinity, NaN, -Infinity; // Special numbers like
 ```
 
 **JavaScript uses a fixer number of bits i.e `64` to store a single number.**
+//FEEDBACK : TYPO IN fixer
 
 Special numbers are values that are of number data type but doesn't exactly behaves like numbers in some cases.
 
@@ -153,7 +154,7 @@ Primitive data type are basic type provided by programming language as a buildin
 
 #### 2. Object (Non-Primitive) Data Type:
 
-For storing some complicated data, programmig languages provide some ways to handle it, starting from primitive type. They have built-in support (adding, removeing, changing) for these kind of data types. Everything that is not primitive is an object in JavaScript. example: function, array etc.
+For storing some complicated data, programming languages provide some ways to handle it, starting from primitive type. They have built-in support (adding, removing, changing) for these kind of data types. Everything that is not primitive is an object in JavaScript. example: function, array etc.
 
 **Non-Primitive Data Types are mutable (can be changed).**
 

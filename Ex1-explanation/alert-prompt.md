@@ -18,6 +18,7 @@ It accepts a string data type and display with an input box where user can enter
 
 ```js
 propmt("What is your age?"); // "21"
+//FEEDBACK : TYPO ERROR OF PROMPT
 ```
 
 ### `confirm`
